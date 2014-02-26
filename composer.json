@@ -1,0 +1,25 @@
+{
+    "name": "cryoutsolutions/paypalrecuringpaymentscreditcard",
+    "description": "laravel-paypalrecuringpaymentscreditcard is a package to help you process and create recuring paypal credit card payments",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Adrian Taralunga",
+            "email": "adu@cryoutsolutions.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.x",
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "paypal/merchant-sdk-php":"v2.5.106"
+    },
+    "autoload": {
+        "psr-0": {
+            "Cryoutsolutions\\dprp": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
