@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Cryoutsolutions\\dprp": "src/"
+            "Cryoutsolutions\\paypalrecuringpaymentscreditcard": "src/"
         }
     },
     "minimum-stability": "dev"
