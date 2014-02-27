@@ -1,6 +1,6 @@
 {
-    "name": "cryoutsolutions/paypalrecuringpaymentscreditcard",
-    "description": "laravel-paypalrecuringpaymentscreditcard is a package to help you process and create recuring paypal credit card payments",
+    "name": "cryoutsolutions/paypalpayment",
+    "description": "laravel-paypalpayment is simple package help you process direct credit card payments",
     "license": "BSD-2-Clause",
     "authors": [
         {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Cryoutsolutions\\Paypalrecuringpaymentscreditcard": "src/"
+            "Cryoutsolutions\\Paypalpayment": "src/"
         }
     },
     "minimum-stability": "dev"

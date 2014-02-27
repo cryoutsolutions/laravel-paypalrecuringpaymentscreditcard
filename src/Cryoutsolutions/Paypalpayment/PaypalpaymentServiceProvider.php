@@ -1,8 +1,8 @@
-<?php namespace Cryoutsolutions\Paypalrecuringpaymentscreditcard;
+<?php namespace Cryoutsolutions\Paypalpayment;
 
 use Illuminate\Support\ServiceProvider;
 
-class PaypalrecuringpaymentscreditcardServiceProvider extends ServiceProvider {
+class PaypalpaymentServiceProvider extends ServiceProvider {
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -18,7 +18,7 @@ class PaypalrecuringpaymentscreditcardServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('cryoutsolutions\paypalrecuringpaymentscreditcard');
+        $this->package('cryoutsolutions/paypalpayment');
     }
 
     /**
@@ -28,9 +28,9 @@ class PaypalrecuringpaymentscreditcardServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->app['paypalrecuringpaymentscreditcard'] = $this->app->share(function($app)
+        $this->app['paypalpayment'] = $this->app->share(function($app)
         {
-            return new Facades\PaypalRecuringPaymentsCreditCard;
+            return new PaypalPayment;
         });
     }
 
@@ -41,7 +41,7 @@ class PaypalrecuringpaymentscreditcardServiceProvider extends ServiceProvider {
      */
     public function provides()
     {
-        return array('paypalrecuringpaymentscreditcard');
+        return array('paypalpayment');
     }
 
 }
