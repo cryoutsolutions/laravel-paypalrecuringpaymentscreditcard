@@ -1,4 +1,4 @@
-<?php namespace Cryoutsolutions\dprp;
+<?php namespace Cryoutsolutions\paypalrecuringpaymentscreditcard;
 
 use Illuminate\Support\ServiceProvider;
 

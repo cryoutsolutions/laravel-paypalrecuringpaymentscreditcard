@@ -1,4 +1,4 @@
-<?php namespace Cryoutsolutions\dprp\Facades;
+<?php namespace Cryoutsolutions\paypalrecuringpaymentscreditcard\Facades;
  
 use Illuminate\Support\Facades\Facade;
  
