@@ -55,4 +55,4 @@ Example Code
     $creditCard->ExpYear = 2014;
     Paypalpayment::CreateRecurringProfile($startDate,$frequency,$period,$amount,$initialAmount,$creditCard);
 
-Sponsored by <therapick.com therapick>
+Sponsored by [therapick](http://therapick.com)
