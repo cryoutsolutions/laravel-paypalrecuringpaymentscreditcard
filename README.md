@@ -2,7 +2,7 @@ laravel-paypalrecuringpaymentscreditcard
 =====================
 
 laravel-paypalrecuringpaymentscreditcard 
-process  direct credit card payments recurring porofiles with laravel 4
+process  direct credit card payments recurring profiles with laravel 4
 Installation
 =============
 Install this package through Composer. To your `composer.json` file, add:
