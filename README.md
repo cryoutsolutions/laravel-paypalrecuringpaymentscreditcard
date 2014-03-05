@@ -47,13 +47,14 @@ Example Code
     $period = "Month";
     $amount=1;
     $initialAmount=1;
+    $description='recurring payment';
     $creditCard = Paypalpayment::CreditCardDetailsType();
     $creditCard->CreditCardNumber = "4745425765192217";
     $creditCard->CreditCardType = "Visa";
     $creditCard->CVV2 = "962";
     $creditCard->ExpMonth = 02;
     $creditCard->ExpYear = 2014;
-    Paypalpayment::CreateRecurringProfile($startDate,$frequency,$period,$amount,$initialAmount,$creditCard);
+    Paypalpayment::CreateRecurringProfile($startDate,$frequency,$period,$amount,$initialAmount,$creditCard, $description);
     
 #You'll receive an answer like this:
     

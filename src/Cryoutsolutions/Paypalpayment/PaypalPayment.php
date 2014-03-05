@@ -11,13 +11,16 @@ use Illuminate\Support\Facades\Config;
 use PayPalAPIInterfaceServiceService;
 use RecurringPaymentsProfileDetailsType;
 use ScheduleDetailsType;
+use PayerInfoType;
+use PersonNameType;
+use AddressType;
 
 class PaypalPayment{
   
 
     // Class functions
 
-    public static function CreateRecurringProfile($startDate,$frequency,$period,$amount,$initialAmount,$creditCard)
+    public static function CreateRecurringProfile($startDate,$frequency,$period,$amount,$initialAmount,$creditCard,$description="recurring billing")
     {
         
         $profileDetails = PaypalPayment::RecurringPaymentsProfileDetailsType();
@@ -31,7 +34,7 @@ class PaypalPayment{
         $actDetails->InitialAmount=PaypalPayment::BasicAmountType("USD",$initialAmount);
         $scheduleDetails = PaypalPayment::ScheduleDetailsType();
         $scheduleDetails->ActivationDetails=$actDetails;
-        $scheduleDetails->Description = "recurring billing";
+        $scheduleDetails->Description = $description;
         $scheduleDetails->PaymentPeriod = $paymentBillingPeriod;
 
         $createRPProfileRequestDetails = PaypalPayment::CreateRecurringPaymentsProfileRequestDetailsType();
@@ -81,6 +84,15 @@ class PaypalPayment{
     }
     public static function ScheduleDetailsType() {
         return new ScheduleDetailsType();
+    }
+    public static function PayerInfoType() {
+        return new PayerInfoType();
+    }
+    public static function PersonNameType() {
+        return new PersonNameType();
+    }
+    public static function AddressType() {
+        return new AddressType();
     }
 
 }
